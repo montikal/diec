@@ -26,16 +26,16 @@ Documentation: https://www.tensorflow.org/lite/guide/inference#running_a_model
 
 1. Deploy the *.pkl and *.tflite files to the Raspberry Pi. You can use [WinSCP](https://winscp.net/eng/download.php) (on Windows) or scp (on MacOS) to transfer files to the Raspberry Pi. You should copy the files to this folder:
 ```
-~/diec/day3/rpi
+~/diec/day4/rpi
 ``` 
 2. From the Raspberry Pi 3, launch docker image containing Tensorflow 2.0 for Python 3.7
 ```
-cd ~/diec/day3/docker
+cd ~/diec/day4/docker
 sh ./launch_docker.sh
 ```
 3. From the **docker container** running on the Raspberry Pi 3, evaluate the saved TF Lite model using inputs
 ```
-cd day3/rpi
+cd day4/rpi
 python3 evaluate.py input_file
 ```
 
