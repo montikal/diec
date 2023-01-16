@@ -1,4 +1,4 @@
-**Credits to Lisa Ong for the original code and setup**
+# Credits to Lisa Ong for the original code and setup
 
 # Time Series Classification on Raspberry Pi using TensorFlow Lite
 
