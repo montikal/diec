@@ -17,7 +17,7 @@ from awsiot import mqtt_connection_builder
 
 
 CLIENT_NAME_PREFIX = 'iot_'
-INTERVAL = 5
+INTERVAL = 7
 
 
 def on_connection_interrupted(connection, error, **kwargs):
@@ -79,7 +79,7 @@ connect_future.result()
 print("Connected!")
 
 
-temperature = 0
+init_temperature = 0
 
 while True:
 
@@ -87,7 +87,7 @@ while True:
 	### Read Temperature from Sensor 
 	################################
 
-	temperature = temperature + random.randint(-1,2)
+	temperature = init_temperature + random.randint(-1,2)
 
 	################################
 
