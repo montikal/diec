@@ -15,6 +15,7 @@ $ pip install matplotlib
 $ pip install seaborn
 $ pip install unzip
 $ pip install jupyter
+$ pip install h5py==2.10.0
 $ python -m ipykernel install --user --name diec --display-name "diec"
 
 #Don't run below if using VS Code
